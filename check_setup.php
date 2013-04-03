@@ -3,8 +3,8 @@
 <hr/>
 <h3>Environment variables</h3>
 <ul>
-  <li><b>$_SERVER['EY_TESTING']</b>: <?php echo isset($_SERVER['EY_TESTING'])?:"----FAIL----"; ?></li>
-  <li><b>$_SERVER['HTTPS']</b>: <?php echo isset($_SERVER['HTTPS'])?:"Not HTTPS? OR FAIL"; ?></li>
+  <li><b>$_SERVER['EY_TESTING']</b>: <?php echo isset($_SERVER['EY_TESTING'])?$_SERVER['EY_TESTING']:"Not set"; ?></li>
+  <li><b>$_SERVER['HTTPS']</b>: <?php echo isset($_SERVER['HTTPS'])?$_SERVER['HTTPS']:"Not HTTPS"; ?></li>
 </ul>
 
 <hr/>
